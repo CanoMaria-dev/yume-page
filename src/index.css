@@ -1,0 +1,70 @@
+/* =================================
+   YUME MUSEUM - GLOBAL STYLES
+================================= */
+
+/* 1. Paleta de colores: tema oscuro */
+
+:root {
+  color-scheme: dark;
+
+  --color-bg: #1A2238;
+  --color-surface: #242F4B;
+  --color-text: #E5E8EF;
+  --color-muted: #AEB8CC;
+  --color-accent: #D4AF7C;
+  --color-secondary: #8B95A7;
+  --color-border: #46516A;
+}
+
+/* 2. Paleta de colores: tema claro */
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --color-bg: #F8F6F1;
+  --color-surface: #FFFFFF;
+  --color-text: #30394D;
+  --color-muted: #5B6B8C;
+  --color-accent: #A77D45;
+  --color-secondary: #8B95A7;
+  --color-border: #D8DCE4;
+}
+
+/* 3. Configuración general */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background-color: var(--color-bg);
+  color: var(--color-text);
+
+  font-family: Arial, sans-serif;
+}
+
+/* 4. Tipografía */
+
+h1, h2, h3, h4 {
+  font-family: Georgia, serif;
+  color: var(--color-text);
+}
+
+h1 {
+  color: var(--color-accent);
+}
+
+/* 5. Enlaces */
+
+a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent);
+}

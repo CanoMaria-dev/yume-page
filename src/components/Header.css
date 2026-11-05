@@ -1,0 +1,16 @@
+header{
+    display: flex; /*hacemos los elementos flexibles*/
+    justify-content: space-between; /*Separamos los componenetes para que ocupen todo del tamaño*/
+    align-items: center; /*alinea los elementos verticalemente*/
+    padding: 20px 40px; /*espaciado entre componenete*/
+}
+
+header nav {
+  display: flex;
+  gap: 20px; /*espacio entre enlaces*/
+}
+
+header nav a {
+  text-decoration: none; /*quitamos el color de las lineas de los enlaces*/
+  color: inherit;
+}
